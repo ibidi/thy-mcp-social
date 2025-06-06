@@ -28,12 +28,12 @@ THY Travel Social, Türk Hava Yolları yolcuları için geliştirilmiş bir sosy
 
 1. Projeyi klonlayın:
 ```bash
-git clone https://github.com/yourusername/thy-social.git
+git clone https://github.com/ibidi/thy-mcp-social.git
 ```
 
 2. Bağımlılıkları yükleyin:
 ```bash
-cd thy-social
+cd thy-mcp-social
 npm install
 ```
 
