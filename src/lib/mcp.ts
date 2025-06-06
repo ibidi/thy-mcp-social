@@ -41,6 +41,17 @@ export const thyAPI = {
     return response;
   },
 
+  // Uçuş bilgileri
+  async getFlightStatus(flightNumber: string): Promise<FlightInfo | null> {
+    try {
+      const response = await mcpClient.call('getFlightStatusByNumber', { flightNumber });
+      return response;
+    } catch (error) {
+      console.error('Uçuş bilgisi alınamadı:', error);
+      return null;
+    }
+  },
+
   // Şehir rehberi
   async getCityGuide(city: string): Promise<CityGuide> {
     const response = await mcpClient.call('getCityGuide', { city });
